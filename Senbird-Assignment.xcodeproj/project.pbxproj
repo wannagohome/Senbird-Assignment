@@ -89,6 +89,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C1125E4125F976DC0044753C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		C181321D25F950B1003ADC5D = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +138,11 @@
 		C181326625F9538E003ADC5D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C1125E4125F976DC0044753C /* Presentation */,
 				C1125E2E25F960380044753C /* Model */,
 				C1125E0D25F957620044753C /* Network */,
 				C181322925F950B1003ADC5D /* AppDelegate.swift */,
 				C181322B25F950B1003ADC5D /* SceneDelegate.swift */,
-				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
