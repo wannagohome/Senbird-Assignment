@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322925F950B1003ADC5D /* AppDelegate.swift */; };
+		C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322B25F950B1003ADC5D /* SceneDelegate.swift */; };
+		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
+		C181323325F950B3003ADC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C181323225F950B3003ADC5D /* Assets.xcassets */; };
+		C181323625F950B3003ADC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181323425F950B3003ADC5D /* LaunchScreen.storyboard */; };
+		C181324125F950B4003ADC5D /* Senbird_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C181323D25F950B4003ADC5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C181321E25F950B1003ADC5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C181322525F950B1003ADC5D;
+			remoteInfo = "Senbird-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C181322625F950B1003ADC5D /* Senbird-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senbird-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C181322925F950B1003ADC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C181322B25F950B1003ADC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C181322D25F950B1003ADC5D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C181323225F950B3003ADC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C181323525F950B3003ADC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C181323725F950B3003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C181323C25F950B4003ADC5D /* Senbird-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senbird-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senbird_AssignmentTests.swift; sourceTree = "<group>"; };
+		C181324225F950B4003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C181322325F950B1003ADC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C181323925F950B4003ADC5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C181321D25F950B1003ADC5D = {
+			isa = PBXGroup;
+			children = (
+				C181322825F950B1003ADC5D /* Senbird-Assignment */,
+				C181323F25F950B4003ADC5D /* Senbird-AssignmentTests */,
+				C181322725F950B1003ADC5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C181322725F950B1003ADC5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C181322625F950B1003ADC5D /* Senbird-Assignment.app */,
+				C181323C25F950B4003ADC5D /* Senbird-AssignmentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C181322825F950B1003ADC5D /* Senbird-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				C181326725F953A5003ADC5D /* Resources */,
+				C181326625F9538E003ADC5D /* Sources */,
+			);
+			path = "Senbird-Assignment";
+			sourceTree = "<group>";
+		};
+		C181323F25F950B4003ADC5D /* Senbird-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */,
+				C181324225F950B4003ADC5D /* Info.plist */,
+			);
+			path = "Senbird-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		C181326625F9538E003ADC5D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C181322925F950B1003ADC5D /* AppDelegate.swift */,
+				C181322B25F950B1003ADC5D /* SceneDelegate.swift */,
+				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C181326725F953A5003ADC5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C181323425F950B3003ADC5D /* LaunchScreen.storyboard */,
+				C181323225F950B3003ADC5D /* Assets.xcassets */,
+				C181323725F950B3003ADC5D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C181322525F950B1003ADC5D /* Senbird-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C181325025F950B4003ADC5D /* Build configuration list for PBXNativeTarget "Senbird-Assignment" */;
+			buildPhases = (
+				C181322225F950B1003ADC5D /* Sources */,
+				C181322325F950B1003ADC5D /* Frameworks */,
+				C181322425F950B1003ADC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Senbird-Assignment";
+			productName = "Senbird-Assignment";
+			productReference = C181322625F950B1003ADC5D /* Senbird-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C181323B25F950B4003ADC5D /* Senbird-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C181325325F950B4003ADC5D /* Build configuration list for PBXNativeTarget "Senbird-AssignmentTests" */;
+			buildPhases = (
+				C181323825F950B4003ADC5D /* Sources */,
+				C181323925F950B4003ADC5D /* Frameworks */,
+				C181323A25F950B4003ADC5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C181323E25F950B4003ADC5D /* PBXTargetDependency */,
+			);
+			name = "Senbird-AssignmentTests";
+			productName = "Senbird-AssignmentTests";
+			productReference = C181323C25F950B4003ADC5D /* Senbird-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C181321E25F950B1003ADC5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C181322525F950B1003ADC5D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					C181323B25F950B4003ADC5D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = C181322525F950B1003ADC5D;
+					};
+				};
+			};
+			buildConfigurationList = C181322125F950B1003ADC5D /* Build configuration list for PBXProject "Senbird-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C181321D25F950B1003ADC5D;
+			productRefGroup = C181322725F950B1003ADC5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C181322525F950B1003ADC5D /* Senbird-Assignment */,
+				C181323B25F950B4003ADC5D /* Senbird-AssignmentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C181322425F950B1003ADC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C181323625F950B3003ADC5D /* LaunchScreen.storyboard in Resources */,
+				C181323325F950B3003ADC5D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C181323A25F950B4003ADC5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C181322225F950B1003ADC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */,
+				C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */,
+				C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C181323825F950B4003ADC5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C181324125F950B4003ADC5D /* Senbird_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C181323E25F950B4003ADC5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C181322525F950B1003ADC5D /* Senbird-Assignment */;
+			targetProxy = C181323D25F950B4003ADC5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C181323425F950B3003ADC5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C181323525F950B3003ADC5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C181324E25F950B4003ADC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C181324F25F950B4003ADC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C181325125F950B4003ADC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJQB4DVQ35;
+				INFOPLIST_FILE = "Senbird-Assignment/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wannagohome.Senbird-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C181325225F950B4003ADC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJQB4DVQ35;
+				INFOPLIST_FILE = "Senbird-Assignment/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wannagohome.Senbird-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C181325425F950B4003ADC5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJQB4DVQ35;
+				INFOPLIST_FILE = "Senbird-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wannagohome.Senbird-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senbird-Assignment.app/Senbird-Assignment";
+			};
+			name = Debug;
+		};
+		C181325525F950B4003ADC5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJQB4DVQ35;
+				INFOPLIST_FILE = "Senbird-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wannagohome.Senbird-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Senbird-Assignment.app/Senbird-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C181322125F950B1003ADC5D /* Build configuration list for PBXProject "Senbird-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C181324E25F950B4003ADC5D /* Debug */,
+				C181324F25F950B4003ADC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C181325025F950B4003ADC5D /* Build configuration list for PBXNativeTarget "Senbird-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C181325125F950B4003ADC5D /* Debug */,
+				C181325225F950B4003ADC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C181325325F950B4003ADC5D /* Build configuration list for PBXNativeTarget "Senbird-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C181325425F950B4003ADC5D /* Debug */,
+				C181325525F950B4003ADC5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C181321E25F950B1003ADC5D /* Project object */;
+}
