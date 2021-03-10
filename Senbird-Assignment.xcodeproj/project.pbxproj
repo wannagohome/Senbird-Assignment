@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1125E0825F957340044753C /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E0725F957340044753C /* ServiceTests.swift */; };
+		C1125E0F25F9576E0044753C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E0E25F9576E0044753C /* Service.swift */; };
+		C1125E2325F95AB40044753C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E2225F95AB40044753C /* NetworkManager.swift */; };
+		C1125E2725F95E350044753C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E2625F95E350044753C /* NetworkError.swift */; };
+		C1125E2B25F95F640044753C /* ServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E2A25F95F640044753C /* ServiceStub.swift */; };
+		C1125E3025F9606F0044753C /* BookSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E2F25F9606F0044753C /* BookSearch.swift */; };
+		C1125E3425F960E20044753C /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E3325F960E20044753C /* BookDetail.swift */; };
+		C1125E3A25F965700044753C /* NetworkManagerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E3925F965700044753C /* NetworkManagerStub.swift */; };
 		C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322925F950B1003ADC5D /* AppDelegate.swift */; };
 		C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322B25F950B1003ADC5D /* SceneDelegate.swift */; };
 		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
 		C181323325F950B3003ADC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C181323225F950B3003ADC5D /* Assets.xcassets */; };
 		C181323625F950B3003ADC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181323425F950B3003ADC5D /* LaunchScreen.storyboard */; };
-		C181324125F950B4003ADC5D /* Senbird_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C1125E0725F957340044753C /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		C1125E0E25F9576E0044753C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		C1125E2225F95AB40044753C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C1125E2625F95E350044753C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C1125E2A25F95F640044753C /* ServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceStub.swift; sourceTree = "<group>"; };
+		C1125E2F25F9606F0044753C /* BookSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearch.swift; sourceTree = "<group>"; };
+		C1125E3325F960E20044753C /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
+		C1125E3925F965700044753C /* NetworkManagerStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerStub.swift; sourceTree = "<group>"; };
 		C181322625F950B1003ADC5D /* Senbird-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senbird-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C181322925F950B1003ADC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C181322B25F950B1003ADC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +49,6 @@
 		C181323525F950B3003ADC5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C181323725F950B3003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C181323C25F950B4003ADC5D /* Senbird-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senbird-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Senbird_AssignmentTests.swift; sourceTree = "<group>"; };
 		C181324225F950B4003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C1125E0D25F957620044753C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C1125E0E25F9576E0044753C /* Service.swift */,
+				C1125E2225F95AB40044753C /* NetworkManager.swift */,
+				C1125E2625F95E350044753C /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C1125E2E25F960380044753C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1125E2F25F9606F0044753C /* BookSearch.swift */,
+				C1125E3325F960E20044753C /* BookDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C181321D25F950B1003ADC5D = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +119,10 @@
 		C181323F25F950B4003ADC5D /* Senbird-AssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				C181324025F950B4003ADC5D /* Senbird_AssignmentTests.swift */,
 				C181324225F950B4003ADC5D /* Info.plist */,
+				C1125E0725F957340044753C /* ServiceTests.swift */,
+				C1125E2A25F95F640044753C /* ServiceStub.swift */,
+				C1125E3925F965700044753C /* NetworkManagerStub.swift */,
 			);
 			path = "Senbird-AssignmentTests";
 			sourceTree = "<group>";
@@ -95,6 +130,8 @@
 		C181326625F9538E003ADC5D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C1125E2E25F960380044753C /* Model */,
+				C1125E0D25F957620044753C /* Network */,
 				C181322925F950B1003ADC5D /* AppDelegate.swift */,
 				C181322B25F950B1003ADC5D /* SceneDelegate.swift */,
 				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
@@ -212,6 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */,
+				C1125E3425F960E20044753C /* BookDetail.swift in Sources */,
+				C1125E0F25F9576E0044753C /* Service.swift in Sources */,
+				C1125E2325F95AB40044753C /* NetworkManager.swift in Sources */,
+				C1125E2725F95E350044753C /* NetworkError.swift in Sources */,
+				C1125E3025F9606F0044753C /* BookSearch.swift in Sources */,
 				C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */,
 				C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */,
 			);
@@ -221,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C181324125F950B4003ADC5D /* Senbird_AssignmentTests.swift in Sources */,
+				C1125E0825F957340044753C /* ServiceTests.swift in Sources */,
+				C1125E3A25F965700044753C /* NetworkManagerStub.swift in Sources */,
+				C1125E2B25F95F640044753C /* ServiceStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
