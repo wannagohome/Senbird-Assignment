@@ -7,18 +7,56 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+protocol SearchViewControllable: class {
+    func showAlert(with title: String)
+    func reloadTable()
+}
+
+final class SearchViewController:
+    UIViewController,
+    SearchViewControllable {
+    
+    var viewModel: SearchViewModel?
     let tableView = UITableView(frame: .zero, style: .grouped)
     let searchController = UISearchController(searchResultsController: nil)
     
+    init(viewModel: SearchViewModel = SearchViewModel()) {
+        defer {
+            self.viewModel?.viewControllable = self
+        }
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.searchController.searchBar.delegate = self
         self.setupTableView()
         self.setupLayout()
     }
     
+    func showAlert(with title: String) {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+            let action = UIAlertAction(title: "dismiss", style: .default)
+            alert.addAction(action)
+            self.present(alert, animated: true)
+        }
+    }
+    
+    func reloadTable() {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
     private func setupTableView() {
-        
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
+        self.tableView.dataSource = self
     }
     
     private func setupLayout() {
@@ -36,3 +74,21 @@ class SearchViewController: UIViewController {
     }
 }
 
+
+extension SearchViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.viewModel?.state.searchResult?.books.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
+        cell.textLabel?.text = self.viewModel?.state.searchResult?.books[indexPath.row].title
+        return cell
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.viewModel?.search(with: searchBar.text)
+    }
+}

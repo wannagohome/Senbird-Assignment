@@ -15,6 +15,9 @@
 		C1125E3025F9606F0044753C /* BookSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E2F25F9606F0044753C /* BookSearch.swift */; };
 		C1125E3425F960E20044753C /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E3325F960E20044753C /* BookDetail.swift */; };
 		C1125E3A25F965700044753C /* NetworkManagerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E3925F965700044753C /* NetworkManagerStub.swift */; };
+		C1125E5125F97C4A0044753C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5025F97C4A0044753C /* SearchViewModel.swift */; };
+		C1125E5925F9E8510044753C /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5825F9E8510044753C /* SearchViewModelTests.swift */; };
+		C1125E5F25F9F07D0044753C /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */; };
 		C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322925F950B1003ADC5D /* AppDelegate.swift */; };
 		C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322B25F950B1003ADC5D /* SceneDelegate.swift */; };
 		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
@@ -41,6 +44,9 @@
 		C1125E2F25F9606F0044753C /* BookSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearch.swift; sourceTree = "<group>"; };
 		C1125E3325F960E20044753C /* BookDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		C1125E3925F965700044753C /* NetworkManagerStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManagerStub.swift; sourceTree = "<group>"; };
+		C1125E5025F97C4A0044753C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C1125E5825F9E8510044753C /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
 		C181322625F950B1003ADC5D /* Senbird-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senbird-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C181322925F950B1003ADC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C181322B25F950B1003ADC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
+				C1125E5025F97C4A0044753C /* SearchViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -131,6 +138,8 @@
 				C1125E0725F957340044753C /* ServiceTests.swift */,
 				C1125E2A25F95F640044753C /* ServiceStub.swift */,
 				C1125E3925F965700044753C /* NetworkManagerStub.swift */,
+				C1125E5825F9E8510044753C /* SearchViewModelTests.swift */,
+				C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */,
 			);
 			path = "Senbird-AssignmentTests";
 			sourceTree = "<group>";
@@ -262,6 +271,7 @@
 				C1125E2325F95AB40044753C /* NetworkManager.swift in Sources */,
 				C1125E2725F95E350044753C /* NetworkError.swift in Sources */,
 				C1125E3025F9606F0044753C /* BookSearch.swift in Sources */,
+				C1125E5125F97C4A0044753C /* SearchViewModel.swift in Sources */,
 				C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */,
 				C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */,
 			);
@@ -272,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1125E0825F957340044753C /* ServiceTests.swift in Sources */,
+				C1125E5F25F9F07D0044753C /* SearchViewControllerTests.swift in Sources */,
 				C1125E3A25F965700044753C /* NetworkManagerStub.swift in Sources */,
 				C1125E2B25F95F640044753C /* ServiceStub.swift in Sources */,
+				C1125E5925F9E8510044753C /* SearchViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

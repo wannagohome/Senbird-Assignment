@@ -19,6 +19,6 @@ struct BookSearch: Decodable {
 struct SearchResult: Decodable {
     let total: String
     let error: String
-    let page: String
+    let page: String?
     let books: [BookSearch]
 }
