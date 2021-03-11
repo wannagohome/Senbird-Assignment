@@ -40,7 +40,7 @@ final class SearchViewControllerTests: XCTestCase {
         XCTAssertEqual(numberOfRows, 1)
         
         let cell = self.viewController.tableView(self.viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
-        XCTAssertEqual(cell.textLabel?.text, "mongodbA")
+        XCTAssertTrue(cell.textLabel?.text?.contains("mongodbA") ?? false)
     }
     
     func testAlert_afterReceiveErrorMessage() {

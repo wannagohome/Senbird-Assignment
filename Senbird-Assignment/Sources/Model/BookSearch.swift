@@ -7,13 +7,23 @@
 
 import Foundation
 
-struct BookSearch: Decodable {
+struct BookSearch: Decodable, CustomStringConvertible {
     let title: String
     let subtitle: String
     let isbn13: String
     let price: String
     let image: String
     let url: String
+    
+    var description: String {
+        """
+        Title : \(title)
+        Subtitle : \(subtitle)
+        isbn13 : \(isbn13)
+        Price : \(price)
+        URL: \(url)
+        """
+    }
 }
 
 struct SearchResult: Decodable {

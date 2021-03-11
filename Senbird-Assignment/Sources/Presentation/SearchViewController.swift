@@ -89,7 +89,8 @@ extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
-        cell.textLabel?.text = self.viewModel?.state.searchResult?.books[indexPath.row].title
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.text = self.viewModel?.state.searchResult?.books[indexPath.row].description
         return cell
     }
 }
