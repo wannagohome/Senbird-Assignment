@@ -22,11 +22,11 @@ final class SearchViewController:
     UIViewController,
     SearchViewControllable {
     
-    var viewModel: SearchViewModel?
+    var viewModel: SearchViewModelProtocol?
     let tableView = UITableView(frame: .zero, style: .grouped)
     let searchController = UISearchController(searchResultsController: nil)
     
-    init(viewModel: SearchViewModel = SearchViewModel()) {
+    init(viewModel: SearchViewModelProtocol = SearchViewModel()) {
         defer {
             self.viewModel?.viewControllable = self
         }
@@ -62,8 +62,10 @@ final class SearchViewController:
     }
     
     private func setupTableView() {
-        self.tableView.register(SearchResultCell.self, forCellReuseIdentifier: SearchResultCell.description())
+        self.tableView.register(SearchResultCell.self,
+                                forCellReuseIdentifier: SearchResultCell.description())
         self.tableView.dataSource = self
+        self.tableView.delegate = self
     }
     
     private func setupLayout() {
@@ -93,6 +95,19 @@ extension SearchViewController: UITableViewDataSource {
         cell.label.text = self.viewModel?.state.searchResult?.books[indexPath.row].description
         cell.bookImage.load(url: self.viewModel?.state.searchResult?.books[indexPath.row].image ?? "")
         return cell
+    }
+}
+
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let isbn13 = self.viewModel?.state.searchResult?.books[indexPath.row].isbn13 {
+            let state = BookDetailViewState(isbn13: isbn13)
+            let vm = BookDetailViewModel(state: state)
+            let vc = BookDetailViewController(viewModel: vm)
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
 }
 

@@ -22,4 +22,21 @@ struct BookDetail: Decodable {
     let price: String
     let image: String
     let url: String
+    
+    var description: String {
+        """
+        Title : \(title)
+        Subtitle : \(subtitle)
+        Authors : \(authors)
+        Publisher : \(publisher)
+        Pages : \(pages)
+        Year : \(year)
+        Rating : \(rating)
+        isbn13 : \(isbn13)
+        Price : \(price)
+        URL: \(url)
+
+        Description : \(desc)
+        """
+    }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BookSearch: Decodable, CustomStringConvertible {
+struct BookSearch: Decodable {
     let title: String
     let subtitle: String
     let isbn13: String

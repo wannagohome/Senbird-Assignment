@@ -15,4 +15,9 @@ final class ServiceStub: ServiceProtocol {
                 completionHandler: @escaping (Result<SearchResult, NetworkError>) -> Void) {
         self.lastKeyword = keyword
     }
+    
+    func getDetail(isbn13: String,
+                   completionHandler: @escaping (Result<BookDetail, NetworkError>) -> Void) {
+        self.lastKeyword = isbn13
+    }
 }

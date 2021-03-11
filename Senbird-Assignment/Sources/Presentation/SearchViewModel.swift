@@ -9,6 +9,7 @@ import Foundation
 
 protocol SearchViewModelProtocol {
     var state: SearchViewState { get }
+    var viewControllable: SearchViewControllable? { get set }
     
     func search(with keyword: String?)
 }
@@ -18,11 +19,11 @@ struct SearchViewState {
 }
 
 final class SearchViewModel: SearchViewModelProtocol {
-    let service: Service
+    let service: ServiceProtocol
     var state: SearchViewState
     weak var viewControllable: SearchViewControllable?
     
-    init(service: Service = Service(),
+    init(service: ServiceProtocol = Service(),
          state: SearchViewState = SearchViewState()) {
         self.service = service
         self.state = state
@@ -31,17 +32,17 @@ final class SearchViewModel: SearchViewModelProtocol {
     func search(with keyword: String?) {
         guard let keyword = keyword else { return }
         
-        self.service.search(keyword: keyword) { result in
+        self.service.search(keyword: keyword) { [weak self] result in
             switch result {
             case .success(let result):
                 guard result.books.isEmpty == false else {
-                    self.viewControllable?.showAlert(with: NetworkError.noBooks.message)
+                    self?.viewControllable?.showAlert(with: NetworkError.noBooks.message)
                     return
                 }
-                self.state.searchResult = result
-                self.viewControllable?.reloadTable()
+                self?.state.searchResult = result
+                self?.viewControllable?.reloadTable()
             case .failure(let error):
-                self.viewControllable?.showAlert(with: error.message)
+                self?.viewControllable?.showAlert(with: error.message)
             }
         }
     }

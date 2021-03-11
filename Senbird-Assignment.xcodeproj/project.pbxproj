@@ -21,6 +21,9 @@
 		C1125E6425FA07980044753C /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E6325FA07980044753C /* SearchResultCell.swift */; };
 		C1125E6E25FA49CC0044753C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E6D25FA49CC0044753C /* ImageLoader.swift */; };
 		C1125E7225FA49E50044753C /* UIImageView + Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E7125FA49E50044753C /* UIImageView + Ex.swift */; };
+		C1125E7625FA67710044753C /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E7525FA67710044753C /* BookDetailViewController.swift */; };
+		C1125E7A25FA69EF0044753C /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E7925FA69EF0044753C /* BookDetailViewModel.swift */; };
+		C1125E7E25FA85EE0044753C /* BookDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E7D25FA85EE0044753C /* BookDetailViewModelTests.swift */; };
 		C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322925F950B1003ADC5D /* AppDelegate.swift */; };
 		C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322B25F950B1003ADC5D /* SceneDelegate.swift */; };
 		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
@@ -53,6 +56,9 @@
 		C1125E6325FA07980044753C /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		C1125E6D25FA49CC0044753C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C1125E7125FA49E50044753C /* UIImageView + Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ex.swift"; sourceTree = "<group>"; };
+		C1125E7525FA67710044753C /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		C1125E7925FA69EF0044753C /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
+		C1125E7D25FA85EE0044753C /* BookDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModelTests.swift; sourceTree = "<group>"; };
 		C181322625F950B1003ADC5D /* Senbird-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senbird-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C181322925F950B1003ADC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C181322B25F950B1003ADC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 				C1125E6225FA07870044753C /* Component */,
 				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
 				C1125E5025F97C4A0044753C /* SearchViewModel.swift */,
+				C1125E7525FA67710044753C /* BookDetailViewController.swift */,
+				C1125E7925FA69EF0044753C /* BookDetailViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -164,6 +172,7 @@
 				C1125E3925F965700044753C /* NetworkManagerStub.swift */,
 				C1125E5825F9E8510044753C /* SearchViewModelTests.swift */,
 				C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */,
+				C1125E7D25FA85EE0044753C /* BookDetailViewModelTests.swift */,
 			);
 			path = "Senbird-AssignmentTests";
 			sourceTree = "<group>";
@@ -290,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1125E7A25FA69EF0044753C /* BookDetailViewModel.swift in Sources */,
 				C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */,
 				C1125E3425F960E20044753C /* BookDetail.swift in Sources */,
 				C1125E0F25F9576E0044753C /* Service.swift in Sources */,
+				C1125E7625FA67710044753C /* BookDetailViewController.swift in Sources */,
 				C1125E2325F95AB40044753C /* NetworkManager.swift in Sources */,
 				C1125E6425FA07980044753C /* SearchResultCell.swift in Sources */,
 				C1125E7225FA49E50044753C /* UIImageView + Ex.swift in Sources */,
@@ -311,6 +322,7 @@
 			files = (
 				C1125E0825F957340044753C /* ServiceTests.swift in Sources */,
 				C1125E5F25F9F07D0044753C /* SearchViewControllerTests.swift in Sources */,
+				C1125E7E25FA85EE0044753C /* BookDetailViewModelTests.swift in Sources */,
 				C1125E3A25F965700044753C /* NetworkManagerStub.swift in Sources */,
 				C1125E2B25F95F640044753C /* ServiceStub.swift in Sources */,
 				C1125E5925F9E8510044753C /* SearchViewModelTests.swift in Sources */,
