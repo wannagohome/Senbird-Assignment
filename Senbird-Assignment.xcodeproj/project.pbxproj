@@ -18,6 +18,9 @@
 		C1125E5125F97C4A0044753C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5025F97C4A0044753C /* SearchViewModel.swift */; };
 		C1125E5925F9E8510044753C /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5825F9E8510044753C /* SearchViewModelTests.swift */; };
 		C1125E5F25F9F07D0044753C /* SearchViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */; };
+		C1125E6425FA07980044753C /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E6325FA07980044753C /* SearchResultCell.swift */; };
+		C1125E6E25FA49CC0044753C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E6D25FA49CC0044753C /* ImageLoader.swift */; };
+		C1125E7225FA49E50044753C /* UIImageView + Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1125E7125FA49E50044753C /* UIImageView + Ex.swift */; };
 		C181322A25F950B1003ADC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322925F950B1003ADC5D /* AppDelegate.swift */; };
 		C181322C25F950B1003ADC5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322B25F950B1003ADC5D /* SceneDelegate.swift */; };
 		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
@@ -47,6 +50,9 @@
 		C1125E5025F97C4A0044753C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		C1125E5825F9E8510044753C /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerTests.swift; sourceTree = "<group>"; };
+		C1125E6325FA07980044753C /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		C1125E6D25FA49CC0044753C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C1125E7125FA49E50044753C /* UIImageView + Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ex.swift"; sourceTree = "<group>"; };
 		C181322625F950B1003ADC5D /* Senbird-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Senbird-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C181322925F950B1003ADC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C181322B25F950B1003ADC5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,10 +104,28 @@
 		C1125E4125F976DC0044753C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				C1125E6225FA07870044753C /* Component */,
 				C181322D25F950B1003ADC5D /* SearchViewController.swift */,
 				C1125E5025F97C4A0044753C /* SearchViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		C1125E6225FA07870044753C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				C1125E6325FA07980044753C /* SearchResultCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		C1125E6C25FA49C10044753C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C1125E6D25FA49CC0044753C /* ImageLoader.swift */,
+				C1125E7125FA49E50044753C /* UIImageView + Ex.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		C181321D25F950B1003ADC5D = {
@@ -147,6 +171,7 @@
 		C181326625F9538E003ADC5D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				C1125E6C25FA49C10044753C /* Helper */,
 				C1125E4125F976DC0044753C /* Presentation */,
 				C1125E2E25F960380044753C /* Model */,
 				C1125E0D25F957620044753C /* Network */,
@@ -269,6 +294,9 @@
 				C1125E3425F960E20044753C /* BookDetail.swift in Sources */,
 				C1125E0F25F9576E0044753C /* Service.swift in Sources */,
 				C1125E2325F95AB40044753C /* NetworkManager.swift in Sources */,
+				C1125E6425FA07980044753C /* SearchResultCell.swift in Sources */,
+				C1125E7225FA49E50044753C /* UIImageView + Ex.swift in Sources */,
+				C1125E6E25FA49CC0044753C /* ImageLoader.swift in Sources */,
 				C1125E2725F95E350044753C /* NetworkError.swift in Sources */,
 				C1125E3025F9606F0044753C /* BookSearch.swift in Sources */,
 				C1125E5125F97C4A0044753C /* SearchViewModel.swift in Sources */,

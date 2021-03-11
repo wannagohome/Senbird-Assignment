@@ -62,7 +62,7 @@ final class SearchViewController:
     }
     
     private func setupTableView() {
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: UITableViewCell.description())
+        self.tableView.register(SearchResultCell.self, forCellReuseIdentifier: SearchResultCell.description())
         self.tableView.dataSource = self
     }
     
@@ -88,9 +88,10 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: UITableViewCell.description(), for: indexPath)
-        cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = self.viewModel?.state.searchResult?.books[indexPath.row].description
+        let cell = tableView.dequeueReusableCell(withIdentifier: SearchResultCell.description(), for: indexPath) as! SearchResultCell
+        cell.label.numberOfLines = 0
+        cell.label.text = self.viewModel?.state.searchResult?.books[indexPath.row].description
+        cell.bookImage.load(url: self.viewModel?.state.searchResult?.books[indexPath.row].image ?? "")
         return cell
     }
 }
