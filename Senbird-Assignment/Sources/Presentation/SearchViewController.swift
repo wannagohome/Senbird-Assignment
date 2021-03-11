@@ -8,8 +8,14 @@
 import UIKit
 
 protocol SearchViewControllable: class {
-    func showAlert(with title: String)
+    func showAlert(with title: String, completionHandler: (() -> Void)?)
     func reloadTable()
+}
+
+extension SearchViewControllable {
+    func showAlert(with title: String, completionHandler: (() -> Void)? = nil) {
+        self.showAlert(with: title, completionHandler: completionHandler)
+    }
 }
 
 final class SearchViewController:
@@ -39,12 +45,13 @@ final class SearchViewController:
         self.setupLayout()
     }
     
-    func showAlert(with title: String) {
+    func showAlert(with title: String,
+                   completionHandler: (() -> Void)? = nil) {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
             let action = UIAlertAction(title: "dismiss", style: .default)
             alert.addAction(action)
-            self.present(alert, animated: true)
+            self.present(alert, animated: true, completion: completionHandler)
         }
     }
     
@@ -90,5 +97,6 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.viewModel?.search(with: searchBar.text)
+        self.searchController.dismiss(animated: true)
     }
 }
