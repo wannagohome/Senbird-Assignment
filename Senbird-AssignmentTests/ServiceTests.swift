@@ -22,7 +22,7 @@ final class ServiceTests: XCTestCase {
         self.service.search(keyword: "mongodb",
                        completionHandler: { _ in })
         
-        let expectedURL = "https://api.itbook.store/1.0/search/mongodb"
+        let expectedURL = "https://api.itbook.store/1.0/search/mongodb/1"
         let actualURL = self.networkManager.lastURL
         XCTAssertEqual(actualURL, expectedURL)
     }

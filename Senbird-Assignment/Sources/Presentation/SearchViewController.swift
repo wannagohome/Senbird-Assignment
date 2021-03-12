@@ -108,7 +108,6 @@ extension SearchViewController: UITableViewDelegate {
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
-        
     }
 }
 
@@ -116,5 +115,13 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.viewModel?.search(with: searchBar.text)
         self.searchController.dismiss(animated: true)
+    }
+}
+
+extension SearchViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y >= (scrollView.contentSize.height - scrollView.frame.size.height)) {
+            self.viewModel?.loadNextPage()
+        }
     }
 }

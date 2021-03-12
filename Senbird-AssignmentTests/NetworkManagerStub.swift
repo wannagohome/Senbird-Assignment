@@ -14,5 +14,6 @@ final class NetworkManagerStub: NetworkManagerProtocol {
     func request(with urlString: String,
                  completionHandler: @escaping (Result<Data, NetworkError>) -> Void) {
         self.lastURL = urlString
+        completionHandler(.success(.init()))
     }
 }

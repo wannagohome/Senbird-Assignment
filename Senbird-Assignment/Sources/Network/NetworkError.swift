@@ -11,6 +11,7 @@ enum NetworkError: Error {
     case urlError
     case castingError
     case noBooks
+    case networkError
     
     var message: String {
         switch self {
@@ -22,6 +23,8 @@ enum NetworkError: Error {
             return "Fail to Casting"
         case .noBooks:
             return "Books not found"
+        case .networkError:
+            return "Network Error"
         }
     }
 }

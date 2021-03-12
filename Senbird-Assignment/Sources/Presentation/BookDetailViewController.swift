@@ -52,7 +52,9 @@ final class BookDetailViewController:
     }
     
     func getNote(_ note: String?) {
-        self.noteTextView.text = note
+        DispatchQueue.main.async { [weak self] in
+            self?.noteTextView.text = note
+        }
     }
     
     func show(bookDetail: BookDetail,

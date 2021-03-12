@@ -10,21 +10,21 @@ import XCTest
 @testable import Senbird_Assignment
 
 final class SearchViewModelTests: XCTestCase {
-    var viewModel: SearchViewModelProtocol!
+    var viewModel: SearchViewModel!
     var networkManager: NetworkManagerStub!
-    var service: Service!
+    var service: ServiceStub!
     
     override func setUp() {
         super.setUp()
         self.networkManager = NetworkManagerStub()
-        self.service = Service(networkManager: self.networkManager)
+        self.service = ServiceStub(networkManager: self.networkManager)
         self.viewModel = SearchViewModel(service: self.service)
     }
     
     func testSearch() {
         self.viewModel.search(with: "mongodb")
         
-        let expectedURL = "https://api.itbook.store/1.0/search/mongodb"
+        let expectedURL = "https://api.itbook.store/1.0/search/mongodb/1"
         let actualURL = self.networkManager.lastURL
         XCTAssertEqual(actualURL, expectedURL)
     }
@@ -33,5 +33,14 @@ final class SearchViewModelTests: XCTestCase {
         self.viewModel.search(with: nil)
         
         XCTAssertEqual(self.networkManager.lastURL, nil)
+    }
+    
+    func testNextPage() {
+        self.viewModel.search(with: "mongodb")
+        self.viewModel.loadNextPage()
+        
+        let expectedURL = "https://api.itbook.store/1.0/search/mongodb/2"
+        let actualURL = self.networkManager.lastURL
+        XCTAssertEqual(actualURL, expectedURL)
     }
 }

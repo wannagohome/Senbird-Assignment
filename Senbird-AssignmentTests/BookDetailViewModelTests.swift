@@ -12,13 +12,13 @@ import XCTest
 final class BookDetailViewModelTests: XCTestCase {
     var viewModel: BookDetailViewModelProtocol!
     var networkManager: NetworkManagerStub!
-    var service: Service!
+    var service: ServiceStub!
     let testISBN13: String = "123"
     
     override func setUp() {
         super.setUp()
         self.networkManager = NetworkManagerStub()
-        self.service = Service(networkManager: self.networkManager)
+        self.service = ServiceStub(networkManager: self.networkManager)
         self.viewModel = BookDetailViewModel(service: self.service,
                                              state: .init(isbn13: self.testISBN13))
     }

@@ -9,9 +9,18 @@ import Foundation
 
 protocol ServiceProtocol {
     func search(keyword: String,
+                page: Int,
                 completionHandler: @escaping (Result<SearchResult, NetworkError>) -> Void)
     func getDetail(isbn13: String,
                    completionHandler: @escaping (Result<BookDetail, NetworkError>) -> Void)
+}
+
+extension ServiceProtocol {
+    func search(keyword: String,
+                page: Int = 1,
+                completionHandler: @escaping (Result<SearchResult, NetworkError>) -> Void) {
+        self.search(keyword: keyword, page: page, completionHandler: completionHandler)
+    }
 }
 
 
@@ -23,8 +32,9 @@ final class Service: ServiceProtocol {
     }
     
     func search(keyword: String,
+                page: Int = 1,
                 completionHandler: @escaping (Result<SearchResult, NetworkError>) -> Void) {
-        let urlString = "https://api.itbook.store/1.0/search/\(keyword)"
+        let urlString = "https://api.itbook.store/1.0/search/\(keyword)/\(page)"
         self.request(urlString: urlString,
                      decodeType: SearchResult.self,
                      completionHandler: completionHandler)

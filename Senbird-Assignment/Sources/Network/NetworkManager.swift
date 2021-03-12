@@ -25,6 +25,10 @@ final class NetworkManager: NetworkManagerProtocol {
         let request = URLRequest(url: url)
         let dataTask = self.session.dataTask(with: request) {
             (data, response, error) in
+            if error != nil {
+                completionHandler(.failure(.networkError))
+                return
+            }
             guard let data = data else {
                 completionHandler(.failure(.noData))
                 return
