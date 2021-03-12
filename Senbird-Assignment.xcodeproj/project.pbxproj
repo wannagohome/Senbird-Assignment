@@ -29,6 +29,7 @@
 		C181322E25F950B1003ADC5D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C181322D25F950B1003ADC5D /* SearchViewController.swift */; };
 		C181323325F950B3003ADC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C181323225F950B3003ADC5D /* Assets.xcassets */; };
 		C181323625F950B3003ADC5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C181323425F950B3003ADC5D /* LaunchScreen.storyboard */; };
+		C1C3B7B925FB2EEE00523CCD /* BookDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C3B7B825FB2EEE00523CCD /* BookDetailViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C181323725F950B3003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C181323C25F950B4003ADC5D /* Senbird-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Senbird-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C181324225F950B4003ADC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1C3B7B825FB2EEE00523CCD /* BookDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 				C1125E5825F9E8510044753C /* SearchViewModelTests.swift */,
 				C1125E5E25F9F07D0044753C /* SearchViewControllerTests.swift */,
 				C1125E7D25FA85EE0044753C /* BookDetailViewModelTests.swift */,
+				C1C3B7B825FB2EEE00523CCD /* BookDetailViewControllerTests.swift */,
 			);
 			path = "Senbird-AssignmentTests";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C3B7B925FB2EEE00523CCD /* BookDetailViewControllerTests.swift in Sources */,
 				C1125E0825F957340044753C /* ServiceTests.swift in Sources */,
 				C1125E5F25F9F07D0044753C /* SearchViewControllerTests.swift in Sources */,
 				C1125E7E25FA85EE0044753C /* BookDetailViewModelTests.swift in Sources */,

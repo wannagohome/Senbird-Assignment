@@ -51,7 +51,8 @@ final class SearchViewController:
             let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
             let action = UIAlertAction(title: "dismiss", style: .default)
             alert.addAction(action)
-            self?.present(alert, animated: true, completion: completionHandler)
+            self?.present(alert, animated: true)
+            completionHandler?()
         }
     }
     

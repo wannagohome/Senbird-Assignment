@@ -13,18 +13,26 @@ final class BookDetailViewModelTests: XCTestCase {
     var viewModel: BookDetailViewModelProtocol!
     var networkManager: NetworkManagerStub!
     var service: Service!
+    let testISBN13: String = "123"
     
     override func setUp() {
         super.setUp()
         self.networkManager = NetworkManagerStub()
         self.service = Service(networkManager: self.networkManager)
         self.viewModel = BookDetailViewModel(service: self.service,
-                                             state: .init(isbn13: "123"))
+                                             state: .init(isbn13: self.testISBN13))
     }
     
     func testGetDtail() {
         let expectedURL = "https://api.itbook.store/1.0/books/123"
         let actualURL = self.networkManager.lastURL
         XCTAssertEqual(actualURL, expectedURL)
+    }
+    
+    func testSetNote() {
+        let note = "mongoDB"
+        self.viewModel.setNote(note)
+        
+        XCTAssertEqual(note, UserDefaults.standard.string(forKey: self.testISBN13))
     }
 }
