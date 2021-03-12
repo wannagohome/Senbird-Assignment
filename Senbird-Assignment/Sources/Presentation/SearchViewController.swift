@@ -47,17 +47,17 @@ final class SearchViewController:
     
     func showAlert(with title: String,
                    completionHandler: (() -> Void)? = nil) {
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
             let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
             let action = UIAlertAction(title: "dismiss", style: .default)
             alert.addAction(action)
-            self.present(alert, animated: true, completion: completionHandler)
+            self?.present(alert, animated: true, completion: completionHandler)
         }
     }
     
     func reloadTable() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
         }
     }
     

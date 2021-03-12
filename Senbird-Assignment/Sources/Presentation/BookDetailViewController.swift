@@ -43,8 +43,11 @@ final class BookDetailViewController:
     }
     
     func show(bookDetail: BookDetail) {
-        DispatchQueue.main.async {
-            self.textView.text = bookDetail.description
+        DispatchQueue.main.async { [weak self] in
+            let attributedString = NSMutableAttributedString(string: bookDetail.description)
+            attributedString.addAttribute(.link, value: bookDetail.url, range: (bookDetail.description as NSString).range(of: bookDetail.url))
+            
+            self?.textView.attributedText = attributedString
         }
     }
     
